@@ -1,0 +1,92 @@
+colorScheme = "congo"
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["posts"]
+# robots = ""
+
+[header]
+  layout = "fixed" # valid options: basic, fixed
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "/img/beach.jpg" # used in: hero, and card
+  showRecent = true
+  showRecentItems = 10
+  showMoreLink = false
+  showMoreLinkDest = "posts"
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = true # only used when layout equals background
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateUpdated = false
+  showAuthor = true
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background
+  layoutBackgroundBlur = true # only used when heroStyle equals background
+  showBreadcrumbs = true
+  showDraftLabel = false
+  showEdit = false
+  editURL = "https://github.com/carterpry/website/tree/main/exampleSite/content"
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true 
+  showAuthorsBadges = true 
+  showWordCount = false
+  showSummary = false
+  sharingLinks = [ "linkedin", "github", "email"]
+
+[list]
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background
+  showBreadcrumbs = false
+  showSummary = true
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  showCards = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy","term"]
+
+[taxonomy]
+  showTermCount = true
+
+#[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[buymeacoffee]
+  identifier = "carterpry"
+  globalWidget = true
+  globalWidgetMessage = ""
+  globalWidgetColor = "#0d93d5"
+  globalWidgetPosition = "Right"
+
+#[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""

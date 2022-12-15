@@ -1,0 +1,10 @@
+{
+    "name": "Carter Pry",
+    "image" : "img/nuno_avatar.jpg",
+    "bio": "Site Creator",
+    "social": [
+        { "linkedin": "https://linkedin.com/in/carter-pry" },
+        { "email": "mailto:contact@carterpry.com" },
+        { "github": "https://github.com/carterpry" }
+    ]
+}
