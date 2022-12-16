@@ -58,7 +58,7 @@ mainSections = ["posts"]
 [list]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = true
   showViews = false
   showLikes = false
