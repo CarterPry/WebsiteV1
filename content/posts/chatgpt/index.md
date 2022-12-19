@@ -21,7 +21,7 @@ As stated earlier ChatGPT was released Nov 30, of 2022, however it was based on 
 ## What the chat thinks of himself
 Maybe you're interested in what it thinks of itself. This is the response it gave me to the question, "What is ChatGPT?"
 
-{{< screenshot src="response.png" alt="response" >}}
+
 
 ## GPT-4
 Though this new and revolutionary GPT project is extremely impressive, we can still look into the next version. The even more human-like robot, GPT-4. GPT-3 was made with 175 Billion Parameters (Learning rate, layers for the AI, etc.), in other words it’s extremely complex, the more parameters the better. Though GPT-3 has that many, GPT-4 which is expected to release in 2023 blows it’s antecessors out of the water with 100 Trillion Parameters. Definitely going to be an interesting project where over 1 million people will be playing with this masterpiece over their browser. Personally I cannot wait for the next big version of ChatGPT, especially if there is a chance for it to be implemented with this futuristic GPT version. The potential for this project is large and extremely exciting. Soon enough the GPT-3 will look like nothing and the time for confusing robots and humans finally will begin.
