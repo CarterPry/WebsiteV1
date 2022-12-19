@@ -8,7 +8,7 @@ tags: ["OpenAI", "AI"]
 
 ## ChatpGPT 
 [Open AI](https://openai.com/) has recently come out with one of the most advanced Artificial Intelligence Chatbots. [ChatGPT](https://chat.openai.com/) came out Nov 30 of 2022, and in about 5 days it easily reached over 1 million users. This advanced chatbot is free and open for any of your questions, with almost a guaranteed answer following a human-like response.
-{{< screenshot src="rotatinglogo.gif" alt="OpenAI Logo" >}}
+{{< screenshot src="openai.png" alt="OpenAI Logo" >}}
 ## How does it work
 The chatbot was made with the [GPT-3](https://openai.com/blog/gpt-3-apps/) language model and trained with massive amounts of data to answer with various outputs in different styles or formats based on the question asked. The AI improved with Reinforcement Learning from Human Feedback (RLHF). Multiple trainers would ask the AI questions but also assist the AI into providing good responses. With the different responses that were received, trainers were also tasked with the job of ranking different responses. This was to create the reward environment to implement the [Proximal Policy Optimization (PPO)](https://openai.com/blog/openai-baselines-ppo/#ppo) reinforcement learning algorithm. In other words the ChatGPT was trained to know what good responses are and which responses it shouldn't put out, including scenarios where it cannot answer the prompt.
 
