@@ -3,7 +3,7 @@ title: "Apache Guacamole"
 date: 2022-10-09 20:55:37 +0100
 description: "Manage server connections through your browser"
 summary: "Managing your servers via web browser with the help of the docker container Guacamole"
-tags: ["networking", "server management", "docker"]
+tags: ["Networking", "Server-Management", "Docker"]
 ---
 
 ## Guacamole Docker 
