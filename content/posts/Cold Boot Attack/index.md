@@ -1,9 +1,9 @@
 ---
-title: "Cold Boot Attack"
-date: 2023-03-26 20:55:37 +0100
-description: "A way for you to be hacked, through your RAM"
-summary: "A way for you to be hacked, through your RAM"
-tags: ["Hardware", "Vulnerability"]
+title: "Apahe Guacamole"
+date: 2022-10-09 20:55:37 +0100
+description: "Manage server connections through your browser"
+summary: "Managing your servers via web browser with the help of the docker container Guacamole"
+tags: ["Networking", "Server-Management", "Docker"]
 ---
 
 ## Cold Boot Attack
@@ -24,8 +24,5 @@ Now the final step for the evil hacker to steal your data, is to take out the RA
 ## Reality of the attack
 
 The reality of this attack is that it’s not used that frequently at all. Most threat actors use methods that don’t require full physical access, much less a RAM module reader, and a ton of evidence to show that something is wrong. I feel as if any victim that saw their PC popped open and missing all of their RAM might conclude that someone was recently there. Although I do think it is a cool concept, it is not something you typically would have to worry about, but like most attacks, it is something good to be aware of. So if you see anyone that’s running away with your RAM sticks, you may want to stop them.
-
-
-
 
 
