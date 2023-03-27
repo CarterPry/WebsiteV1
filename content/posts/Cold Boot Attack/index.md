@@ -2,7 +2,7 @@
 title: "Cold Boot Attack"
 date: 2023-03-26 20:55:37 +0100
 description: "The hardware attack that compromises your data all through your RAM"
-summary: "Hacking your data through RAM"
+summary: "The hardware attack that compromises your data all through your RAM"
 tags: ["Hardware", "Vulnerability"]
 ---
 
