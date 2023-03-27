@@ -1,9 +1,9 @@
 ---
-title: "Apahe Guacamole"
-date: 2022-10-09 20:55:37 +0100
-description: "Manage server connections through your browser"
-summary: "Managing your servers via web browser with the help of the docker container Guacamole"
-tags: ["Networking", "Server-Management", "Docker"]
+title: "Cold Boot Attack"
+date: 2023-03-26 20:55:37 +0100
+description: "Hacking your data through RAM"
+summary: "Hacking your data through RAM"
+tags: ["Hardware", "Vulnerability"]
 ---
 
 ## Cold Boot Attack
