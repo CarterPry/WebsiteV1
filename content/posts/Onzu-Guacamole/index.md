@@ -7,13 +7,18 @@ tags: ["Networking", "Server-Management", "Docker"]
 ---
 
 ## Guacamole Docker 
-Guacamole, not just a chip dip, but a docker package that's capable of server management via web browser. A friend of mine, [Zach Robinson](https://zsrobinson.com), introduced to me this little project that I wanted to try myself. I set up the docker package as well as a VNC server on a Linux Mint PC. Though Mint was used for this, this projects is also compatible with other images as well. This VNC server is what the project is surrounded with the end goal of being able to access it through something like Firefox or Brave. Though that is what I used for an example, it does take in multiple other connections to be managed by the system admin.
+Guacamole, not just another chip dip, but a tool that enables server management via web browser. This container allows users to access their servers, PC’s, or whatever connection they configure from anywhere, using nothing but a web browser.
+
+I was introduced to this project by a friend, [Zach Robinson](https://zsrobinson.com), and decided to attempt it myself. To get started, I downloaded the Docker package and a VNC server on my Linux Mint PC. However, it is worth noting that Onzu-Guacamole is also compatible with other operating systems, making it a versatile tool for system admins.
+
+The end goal of this project was to access my PC through my laptop using a browser like Firefox or Brave. This allows me to manage my server from anywhere, without the need for a complex setup or additional hardware. Additionally, Guacamole supports multiple connections, making it an ideal tool for system administrators looking to manage multiple servers at once.
+
 
 ## What's VNC
-A virtual network computing (VNC) server is a screen sharing protocol that is similar to Remote Desktop Protocol (RDP) but works differently. One of the larger differences from VNC to RDP is that VNC doesn't use a virtual session like RDP. For example VNC uses the same display as what the user would see on the actual server in front of them. If you were to use RDP on someone's computer the person in front of the actual server wouldn't see the mouse moving around but for VNC you do. I chose to indulge with this frame by frame service due to the fact that I had never actually used it before. I did feel as if it would be fun to not just work with an unknown docker project, but implement it with another unknown configuration. 
+The virtual network computing (VNC) protocol is a screen sharing protocol that has similarities to Remote Desktop Protocol (RDP) yet functions differently. One of the primary differences between the two is that VNC doesn’t utilize a virtual session, but relies on the same display as what the user would see on the actual screen in front of them. This unique feature of VNC allows the mouse movement to be visible to anyone physically present at the server unlike RDP. I have never used the protocol before and used this as a fun opportunity to not just work with an unknown docker project, but implement it with another unknown configuration I was unaware of.
 
 ## Installing VNC
-The first task at hand was to get the VNC server running on the PC. To do this, I installed the required packages and configured the required parts it needed to be active. For Linux Mint there is a good guide for setting one up [here](https://community.linuxmint.com/tutorial/view/2334)  
+The first task at hand was to get the VNC server up and running. To achieve this, I installed the necessary packages and configured contents as needed to activate it. For Linux Mint there is a helpful guide that can be found [here](https://community.linuxmint.com/tutorial/view/2334).
 
 ## Installing Guacamole
 Next you would need to add docker to your system, which may vary different installation methods based on your image. Once it was installed on my PC I used the command
@@ -23,13 +28,13 @@ docker pull oznu/guacamole
 ```
 
 ## Running the Chip Dipping Package
-A way to run this service is with a few parts, with first consisting of the docker command `docker run` to start the package. 
+To run this service, a few steps are required. First, the Docker command `docker run` should be used to start the package.
 
-The 2nd line specifies the port with the left listed being for the host, and the right as the container port number. 
- (I used -p 80:8080\)
+The 2nd line specifies the port with the left listed being for the host, and the right as the container port number. (I used -p 80:8080)
 
-The 3rd line is the location of where you want the guacamole configuration to be held, a location at your choosing 
-Lastly the 4th line is the package specification. Which Docker container are you using for these commands. 
+The 3rd line is the location of where you want the guacamole configuration to be held, a location at your choosing. 
+
+Lastly the 4th line is the package specification. Which Docker container are you using for these commands?
 
 The command below is a good guideline on how it should look.
 
@@ -40,13 +45,13 @@ docker run\
   oznu/guacamole
 ```
 
-After running that command with the config directory filled in, I could login to the hosting PC´s LAN IP. It was a web server being hosted with a login prompt at the front.
+After running that command with the config directory filled in, I type my PC’s LAN IP into a browser, and a login page appears.
 
 ## Establishing Connections
-The front page has default credentials with both being `guacadmin`. To change this all you would need to do was log in with the default values, and change it in the settings. In this same location you can even make other accounts with different permissions in case you wanted to share your browser project access. I personally created a new account for a custom username and password so i could delete the default login. 
+Upon accessing the front page, the default credentials were already set as `guacadmin` for both username and password. To change this, all you would need to do was log in with the default values, and make the change in the settings. Additionally, creating multiple accounts with varying levels of permissions can be useful if you plan on sharing access to your browser project with others. I personally created a new account for a custom username and password so I could delete the default login  altogether.
 
-Now to connect the VNC portion with this site I had to enter the right connection parameters. There are tons of options for your choosing, even with connections including SSH, RDP, Telnet and Kubernetes. For this I selected VNC, entered the hostname (the LAN IP) of the PC and the credentials of that VNC server I set (Not to confuse the creditntails I entered for Guacamole). There are more options you can fill out like load balancing or number of connections but leaving them blank is perfectly fine. There are only some required fields that would need a value. Once done, I could go back to the home page and see the new connection that is now established. I could select the connection and start using my PC through just my browser
+Now to connect your brand new VNC service to the Guacamole.With a plethora of options to choose from, such as SSH, RDP, Telnet, and Kubernetes, I selected VNC and proceeded to enter the hostname of the PC's LAN IP, along with my personal credentials (Not to confuse the credentials I entered for Guacamole). There are additional options you can fill out like load balancing or number of connections, but leaving them blank is perfectly fine. There are only some required fields that would need a value. Once done, I could return to the home page and witness the new connection that is now established. I selected the connection and started using my PC through just my browser
 
 ## Outside your LAN
-One of the cool things you can do is actually make it accessible from a public IP as well. Meaning you can access it from the internet from not just your home but anywhere else as well. Though it may not be fully secure, it is something interesting you can set up. You could either port forward your router to make that Docker PC accessible with the right port, or even tie it to a domain name. For instance If I decided to go through with that concept, I could type in `carterpry.com` and would be brought straight to the guacamole login page.
+One of the cool things about this setup is the ability to make the VNC server accessible from a public IP. While this may not be the most secure option, it's still a pretty neat feature. You could port forward your router to make that Docker PC accessible, and even tie it to a domain name. For instance If I decided to go through with that concept, I could type in `carterpry.com` and would be brought straight to the guacamole login page.
 
