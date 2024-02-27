@@ -3,7 +3,7 @@ title: "ChatGPT"
 date: 2022-12-13 20:55:37 +0100
 description: "One of the most advanced AI Chatbots"
 summary: "One of the most advanced AI Chatbots"
-tags: ["OpenAI", "AI"]
+tags: ["AI"]
 ---
 
 ## ChatpGPT 
