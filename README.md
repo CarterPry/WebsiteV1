@@ -1,11 +1,5 @@
 # My Website
-This is my personal website/portfolio built with the [Hugo](https://gohugo.io/) framework and styled with the [Blowfish theme](https://github.com/nunocoracao/blowfish). I will post from time to time on any topics or projects I might find intersting.
-
-
-
-# My Website
-
-Welcome to the repository for my personal website and portfolio. This site is built with the [Hugo](https://gohugo.io/) static site generator, leveraging the powerful and customizable [Blowfish theme](https://github.com/nunocoracao/blowfish). Here, I'll share insights, projects, and topics that spark my interest, ranging from technology to personal hobbies.
+This is my personal website/portfolio built with the [Hugo](https://gohugo.io/) framework and styled with the [Blowfish theme](https://github.com/nunocoracao/blowfish). I'll post from time to time on any topics or projects I might find intersting, mostly relating to technology.
 
 ## Features
 
@@ -21,7 +15,7 @@ To run this site locally, you'll need to have Hugo installed on your machine. Fo
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/yourusername/yourwebsite.git
+git clone https://github.com/TheRepoYouChose
 cd yourwebsite
 ```
 
