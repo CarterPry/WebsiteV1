@@ -18,6 +18,7 @@ dateFormat = "January 2, 2006"
   headline = "Hey, I'll be posting from time to time about projects or blogs"
   links = [
     { email = "mailto:contact@carterpry.com" },
+    { instagram = "https://instagram.com/carter.pry" },
     { github = "https://github.com/carterpry" },
     { linkedin = "https://linkedin.com/in/carter-pry" },
   ]
