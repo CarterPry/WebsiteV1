@@ -1,5 +1,5 @@
 # My Website
-This is my personal website/portfolio built with the [Hugo](https://gohugo.io/) framework and styled with the [Blowfish theme](https://github.com/nunocoracao/blowfish). I'll post from time to time on any topics or projects I might find intersting, mostly relating to technology.
+This is my personal website/portfolio built with the [Hugo](https://gohugo.io/) framework and styled with the [Blowfish theme](https://github.com/nunocoracao/blowfish). I'll post from time to time on any topics or projects I might find interesting, mostly relating to technology.
 
 ## Features
 
